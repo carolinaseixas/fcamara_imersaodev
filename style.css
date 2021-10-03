@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  background: #333366;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  margin: 25px;
+}
+
+.logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 72px;
+  margin: 10px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 48px;
+  margin: 10px;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 28px;
+  margin: 38px;
+}
+
+.recomendacoes {
+  background: #ecf4ff;
+  color: #1c1c1c;
+  margin: 32px;
+  border-radius: 20px;
+  box-shadow: 6px 6px 6px #0e1d2f;
+  font-weight: 400;
+  font-size: 22px;
+  display: flex;
+  align-self: flex;
+  justify-content: center;
+  padding: 10px 16px;
+}
+
+div.recomendacao {
+  width: 250px;
+  padding-inline: 20px;
+  text-align: top;
+  padding: 20px;
+}
+
+.img-recomendacao {
+  border-radius: 400px;
+  max-height: 120px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.agendamento {
+  margin: 0 0 15px;
+  text-align: center;
+}
+
+#nome {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+select {
+  height: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  border-radius: 5px;
+  margin: 5px;
+  padding-inline: 10px;
+  color: #5b5b5b;
+  border: 1px solid #c7c7c7;
+  cursor: pointer;
+}
+
+h3.obs {
+  font-weight: 400;
+  font-size: 18px;
+  margin: 38px;
+}
+
+.agendamento button {
+  border: 0;
+  color: #ffffff;
+  background: #ff6633;
+  font-weight: bold;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.agendamento button:hover {
+  opacity: 0.8;
+}
+
+#resultado {
+  font-weight: 400;
+  font-size: 32px;
+  margin: 38px;
+  padding-top: 10px;
+  text-align: center;
+  color: #ff6633;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
