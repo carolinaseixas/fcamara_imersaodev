@@ -4,59 +4,89 @@ body {
   background: #333366;
   font-family: "Roboto", sans-serif;
   color: #ffffff;
-  margin: 25px;
+  font-size: 18px;
+}
+
+header {
+  background: #ffffff;
 }
 
 .logo {
-  width: 40px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
+  width: 8%;
+  padding: 20px;
+}
+
+.destaque {
+  background: #ffffff;
+  color: #1c1c1c;
+  padding: 30px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+span {
+  color: #ff6633
 }
 
 h1 {
   font-weight: 700;
-  font-size: 72px;
-  margin: 10px;
+  font-size: 3em;
+  padding: 0 300px 20px 0;
 }
 
-h2 {
-  font-weight: 400;
-  font-size: 48px;
-  margin: 10px;
+.subtitulo {
+  font-size: 1.5em;
 }
 
-h3 {
-  font-weight: 400;
-  font-size: 28px;
-  margin: 38px;
+.img-destaque {
+  width: 35%;
+  padding-bottom: 30px;
+}
+
+.subtitulo--centro {
+  text-align: center;
+  padding: 50px 0;
+  line-height: 150%;
 }
 
 .recomendacoes {
-  background: #ecf4ff;
   color: #1c1c1c;
   margin: 32px;
-  border-radius: 20px;
-  box-shadow: 6px 6px 6px #0e1d2f;
-  font-weight: 400;
   font-size: 22px;
   display: flex;
-  align-self: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   padding: 10px 16px;
 }
 
 div.recomendacao {
-  width: 250px;
-  padding-inline: 20px;
+  width: 20%;
   text-align: top;
   padding: 20px;
+  background: #ecf4ff;
+  border-radius: 20px;
+  box-shadow: 6px 6px 6px #0e1d2f;
+  font-weight: 400;
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .img-recomendacao {
-  border-radius: 400px;
-  max-height: 120px;
+  border-radius: 50%;
+  width: 50%;
+  max-width: 150px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 5% 5% 10%;
+}
+
+.p-recomendacao {
+  text-align: center;
+  margin: 5%;
+  line-height: 150%;
 }
 
 .agendamento {
@@ -66,7 +96,7 @@ div.recomendacao {
 
 #nome {
   display: block;
-  margin: 0 auto;
+  margin: 1% auto;
   padding: 10px 15px;
   font-size: 16px;
   border-radius: 5px;
@@ -84,7 +114,7 @@ select {
   cursor: pointer;
 }
 
-h3.obs {
+.obs {
   font-weight: 400;
   font-size: 18px;
   margin: 38px;

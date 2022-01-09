@@ -1,64 +1,65 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="pt-br" >
 <head>
   <meta charset="UTF-8">
-  <title>Agendamento de retorno ao escritório</title>
-  <link rel="stylesheet" href="./style.css">
-
+  <title>FCamara - Agendamento de retorno ao escritório</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script  src="./script.js"></script>
 </head>
-<body>
-<!-- partial:index.partial.html -->
-
 
 <body>
-  <div>
-
     <header>
-      <a href="https://www.fcamara.com.br/" target="_blank">
-        <img src="https://magento.fcamara.com.br/wp-content/uploads/2021/01/logo-fcamara-laranja-02-1.png" alt="" class="logo">
+      <a href="https://www.fcamara.com.br/" target="_blank" aria-label="Link para o site da FCamara">
+        <img src="./img/logofc.png" alt="Logo FCamara" class="logo">
       </a>
-      <h1>Você é um <font color=#ff6633>#SangueLaranja </font>e está cansado de trabalhar em casa?</h1>
-      <br></br>
-      <h2>Aqui você pode escolher continuar <font color=#ff6633>home office </font>ou voltar para o <font color=#ff6633>escritório</font>!</h2>
-      <h3>
-        <br></br>
-        <p>
-          <font color=#ff6633>MAS ATENÇÃO:</font>
-          <br>para você que quer voltar para o escritório, temos algumas regras:</br>
-        </p>
-      </h3>
     </header>
 
     <main>
-      <div class="recomendacoes">
+      <section class="destaque">
+        <div>
+          <h1>Você é um <span>#SangueLaranja </span>e está cansado de trabalhar em casa?</h1>
+          <p class="subtitulo">Aqui você pode escolher continuar <span>home office </span>ou voltar para o <span>escritório</span>!</p>
+        </div>
+        <img src="./img/team.svg" alt="Ilustração de um time de tecnologia trabalhando" class="img-destaque">
+      </section>
+
+      <p class="subtitulo subtitulo--centro"><span>MAS ATENÇÃO:</span><br>
+          para você que quer voltar para o escritório, temos algumas regras:
+        </p>
+
+      <section class="recomendacoes">
         <div class="recomendacao">
           <img class="img-recomendacao" src="https://thumbs.dreamstime.com/b/o-homem-est%C3%A1-sendo-verificado-quanto-%C3%A0-temperatura-corporal-com-uma-ilustra%C3%A7%C3%A3o-do-vetor-infravermelho-term%C3%B4metro-184026902.jpg" />
-          <p> Será medida a temperatura ao chegar no escritório </p>
+          <p class="p-recomendacao"> Será medida a temperatura ao chegar no escritório </p>
         </div>
+
         <div class="recomendacao">
           <img class="img-recomendacao" src="https://i.pinimg.com/736x/de/3c/24/de3c24ce6b892371b1631199b4e028c8.jpg" />
-          <p> Todos os consultores deverão usar máscaras dentro das acomodações dos escritórios </p>
+          <p class="p-recomendacao"> Todos os consultores deverão usar máscaras dentro das acomodações dos escritórios </p>
         </div>
+
         <div class="recomendacao">
           <img class="img-recomendacao" src="https://cdn.pixabay.com/photo/2012/04/23/15/20/one-38484_960_720.png" />
-          <p> Nas mesas existem adesivos sinalizando onde os #SangueLaranjas devem sentar, para que haja o distanciamento necessário (os escritórios só podem comportar até 40% dos consultores, conforme a legislação) </p>
+          <p class="p-recomendacao"> Nas mesas existem adesivos sinalizando onde os #SangueLaranjas devem sentar, para que haja o distanciamento necessário (os escritórios só podem comportar até 40% dos consultores, conforme a legislação) </p>
         </div>
+
         <div class="recomendacao">
           <img class="img-recomendacao" src="https://i.pinimg.com/736x/13/3b/af/133baf802098007c152d0aebef73c285.jpg" />
-          <p> Pessoas que estiverem sentindo algum sintoma não devem ir trabalhar presencialmente, a indicação é para que permaneçam em casa </p>
+          <p class="p-recomendacao"> Pessoas que estiverem sentindo algum sintoma não devem ir trabalhar presencialmente, a indicação é para que permaneçam em casa </p>
         </div>
-      </div>
-      <div>
-        <h3>
-          <p align=center>Achou as regras tranquilas? Então <font color=#ff6633>faça um agendamento</font>, escolhendo o escritório, dia e estação em que irá trabalhar:</p>
-        </h3>
-      </div>
-      <div class="agendamento">
+      </section>
+
+      <p class="subtitulo subtitulo--centro">Achou as regras tranquilas? Então <span>faça um agendamento</span>, escolhendo o escritório, dia e estação em que irá trabalhar:</p>
+
+      <form class="agendamento">
         <p><input type="text" id="nome" placeholder="Insira seu nome completo"></p>
+
         <select id="cidade">
           <option value="sp" selected>São Paulo</option>
           <option value="santos">Santos</option>
         </select>
+
         <select id="dia">
           <option value="seg" selected>Segunda</option>
           <option value="ter">Terça</option>
@@ -66,6 +67,7 @@
           <option value="qui">Quinta</option>
           <option value="sex">Sexta</option>
         </select>
+
         <select id="estacao">
           <option value="1" selected>1</option>
           <option value="2">2</option>
@@ -73,16 +75,13 @@
           <option value="4">4</option>
           <option value="5">5</option>
         </select>
-        <h3 class="obs">Importante: só é possível agendar para o período de uma semana</h3>
+
+        <p class="obs">Importante: só é possível agendar para o período de uma semana</p>
+
         <p><button onClick="agendar()">Agendar agora!</button></p>
-      </div>
+      </form>
+
       <div id="resultado"></div>
     </main>
-
-  </div>
-</body>
-<!-- partial -->
-  <script  src="./script.js"></script>
-
 </body>
 </html>
